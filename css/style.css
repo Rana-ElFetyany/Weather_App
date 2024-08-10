@@ -1,0 +1,211 @@
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+.pointer-cursor{
+  cursor: pointer;
+}
+
+input[placeholder]::-webkit-input-placeholder {
+  color: rgb(115, 115, 120);
+}
+textarea[placeholder]::-webkit-input-placeholder {
+  color: rgb(115, 115, 120);
+}
+.form-control:focus {
+  box-shadow: unset;
+}
+
+
+/* ! NAVBAR */
+
+.navbar {
+  position: static;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  background-color: #1E202B;
+  z-index: 999;
+}
+.navbar-brand{
+  font-family: "PT Sans Narrow", sans-serif;
+
+}
+
+.nav-item .nav-link {
+  color: white;
+  font-family: "PT Sans Narrow", sans-serif;
+}
+
+.nav-item:hover .nav-link {
+  color: #009AD8 !important;
+  border: 1px solid #009AD8;
+  border-radius: 20px;
+}
+
+.active {
+  border-radius: 20px;
+  border: 1px solid #009AD8;
+  color: #009AD8 !important;
+}
+
+/* ! Home */
+
+.home-body{
+  position: relative;
+  z-index: 99;
+}
+
+main {
+  background-color: #1E202B;
+  min-height: 80vh;
+}
+
+.photoSec{
+  height: 50vh;
+  top: 0px;
+  left: 0px;
+  z-index: 10;
+}
+
+.searchLoc input{
+  background-color: #1E202B !important;
+}
+.searchLoc .btn{
+background-color: #009AD8 !important;
+right: 20px;
+}
+
+.CardHead1{
+  background-color: #2D303D;
+  top: 0px;
+}
+#location{
+  top:-20px;
+  right: 10px;
+}
+#locationCountry{
+  top:-20px;
+
+}
+.CardHead2{
+  background-color: #222530;
+}
+
+.CardBody1{
+  background-color: #323544;
+  /* top: 10px; */
+}
+.CardBody2{
+  background-color: #262936;
+}
+.weatherStatus{
+  color: #009AD8;
+}
+
+
+/* ! FOOTER */
+
+.footer{
+  background-color: #262936;
+}
+
+.contactWays input{
+  background-color: #1E202B !important;
+}
+.contactWays .btn{
+background-color: #009AD8 !important;
+top: 8px;
+right: 20px;
+}
+
+.icon-circle{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #1E202B;
+  color: #009AD8;
+  transition: all 0.3s;
+}
+.icon-circle:hover{
+  
+  background-color: #009AD8;
+  color: white;
+}
+
+
+/* ! CONTACT */
+.contentPage{
+  background-color: #1E202B;
+}
+.contentPage .mapSec{
+  background-color: #262936 !important;
+  height: 350px;
+}
+
+.contact-details .contact-info{
+  bottom: 5px;
+
+}
+.contentPage input{
+  background-color: #1E202B !important;
+  border: 1px solid rgba(255, 255, 255, 0.522);
+}
+.contentPage textarea{
+  background-color: #1E202B !important;
+  border: 1px solid rgba(255, 255, 255, 0.522);
+}
+.contentPage input:hover{
+  border-color: #009AD8;
+}
+.contentPage input:focus{
+  border-color: #009AD8;
+}
+.contentPage .btn{
+  background-color: #009AD8 !important;
+  right: 0px;
+}
+
+
+
+.pathWay{
+  background-color: #262936;
+}
+.pathWay a{
+  text-decoration: none;
+}
+.pathWay a:hover{
+  text-decoration:underline;
+}
+
+
+
+/* !==> loading <== */
+.loader {
+  width: 65px;
+  aspect-ratio: 1;
+  position: relative;
+}
+.loader:before,
+.loader:after {
+  content: "";
+  position: absolute;
+  border-radius: 50px;
+  box-shadow: 0 0 0 3px inset #fff;
+  animation: l5 2.5s infinite;
+}
+.loader:after {
+  animation-delay: -1.25s;
+  border-radius: 0;
+}
+@keyframes l5{
+  0%    {inset:0    35px 35px 0   }
+  12.5% {inset:0    35px 0    0   }
+  25%   {inset:35px 35px 0    0   }
+  37.5% {inset:35px 0    0    0   }
+  50%   {inset:35px 0    0    35px}
+  62.5% {inset:0    0    0    35px}
+  75%   {inset:0    0    35px 35px}
+  87.5% {inset:0    0    35px 0   }
+  100%  {inset:0    35px 35px 0   }
+}
